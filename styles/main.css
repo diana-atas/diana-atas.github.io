@@ -9,8 +9,34 @@ h1 {
 
 }
 
-nav {
-  background-color: #F1F7C2;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E7F195;
+  /* position: fixed;
+  top: 0; */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block; 
+  color: #106F7A;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #D2E53A;
+}
+
+.active {
+  background-color: #68DDEB;
 }
 
 .hero-image {
