@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+  color: #0D3849;
+  background-color: #FFFFFF;
+}
+
+h1 {
+
+}
+
+nav {
+  background-color: #F1F7C2;
+}
+
+.hero-image {
+  height: 300px;
+  width: auto;
+}
