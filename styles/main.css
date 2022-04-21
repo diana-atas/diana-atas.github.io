@@ -2,7 +2,9 @@ body {
   margin: 0;
   font-family: Helvetica;
   color: #0D3849;
-  background-color: #FFFFFF;
+  /* background-color: #DBF8C9; */
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -14,7 +16,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #E7F195;
+  background-color: #FFFFFF;
   /* position: fixed;
   top: 0; */
 }
@@ -36,10 +38,30 @@ li a:hover {
 }
 
 .active {
-  background-color: #68DDEB;
+  background-color: #C9F3F8;
 }
 
 .hero-image {
   height: 300px;
   width: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.yellow-box {
+  background-color: #DBF8C9;
+  height: 400px;
+}
+
+.purple-box {
+  background-color: #E6C9F8;
+  height: 200px;
+}
+
+.peach-box {
+  background-color: #F8CFC9;
+  height: 600px;
 }
