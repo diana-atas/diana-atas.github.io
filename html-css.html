@@ -10,25 +10,65 @@
     <nav>
       <ul>
         <li><a href="/index.html">Home</a></li>
-        <li class="active"><a href="#">Technical Blog - CSS Concepts</a></li>
+        <li class="active"><a href="#">Technical Blog</a></li>
         <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
       </ul>
     </nav>
-    <h1>CSS Concepts</h1>
 
-    <p> You need to select a topic first!</p>
+    <h1>The CSS Box Model</h1>
+    <h2>My Sushi Sample</h2>
 
-    <ul>
-      <li>What is the difference between Margin, Border, and Padding?</li>
-      <li>What are the best practices associated with using classes vs. ids?</li>
-      <li>What are the differences between relative, absolute, and fixed positioning?</li>
-      <li>What does it mean to display inline vs inline blocks?</li>
-    </ul>
-  
+    <p>Every element in a webpage is in its own box – the heading up there, this paragraph, the images below – although it may or may not really look like a box. The Box Model is a standard in CSS and is used in laying out and presenting HTML.</p>
+
+    <p>Each box has four layers and I love sushi so to illustrate let’s make sushi! There are heaps of types of sushi but we’ll stick to the classic Salmon Maki Sushi Roll for now.</p>
+
+    <p>The following code produces a piece of sushi (view from the top) not nearly as appetising as the real thing but it’ll do (I hope!).</p>
+
+    <pre><code>
+      <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <title>My Sushi Sample</title>
+          </head>
+          <style>
+            .sushi {
+              height: 100px;
+              width: 100px;
+              padding: 50px;
+              border-color: #069A8E;
+              border-width: 10px;
+              border-radius: 50%;
+              border-style: solid;
+            }
+          </style>
+          <body>
+            <img class="sushi" src="pinksquare.jpg" alt="this is a pink square">
+          </body>
+        </html>
+    </code></pre>
+
+    <h3>Content</h3>
+    <p>This is your element (your text or your image), this is your fresh salmon fillet. We can set the dimensions of the Content using the <code>width</code> and <code>height</code> properties.</p>
+
+    <h3>Padding</h3>
+    <p>This is the area around your Content, this is your cooked sushi rice. Want more rice? Sure can do! Just increase the <code>padding</code> property.</p>
+    
+    <h3>Border</h3>
+    <p>This is the Toasted Nori (dried edible seaweed) that goes around your Padding. It would be good to note that some types of sushi may not be wrapped by Nori but something else like more fish or sesame seeds. Depending on the type of sushi you are making, you can specify the border colour, width, radius, or style.</p>
+    
+    <h3>Margins</h3>
+    <p>This is the area outside the border; it is the whitespace between each box in the webpage. We really cannot see how this works unless we get more sushi and line them up like so.</p>
+
+    <p>And these pieces right here have no margins.</p>
+
+    <p>Now it’s your turn to make sushi. Enjoy!</p>
+
+    <p>I’m off to have me some real sushi…</p>
+
     <footer>
       This is a footer in case you need it!
     </footer>
     
   </body>
-  
 </html>
