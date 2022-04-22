@@ -26,7 +26,7 @@ li {
 }
 
 li a {
-  display: block; 
+  display: block;
   color: #106F7A;
   text-align: center;
   padding: 10px;
@@ -43,7 +43,8 @@ li a:hover {
 
 .hero-image {
   height: 300px;
-  width: auto;
+  width: 300px;
+  border-radius: 50%;
 }
 
 .flex-container {
@@ -53,19 +54,22 @@ li a:hover {
 
 .yellow-box {
   background-color: #FFFBE7;
-  height: 400px;
+  height: 200px;
 }
 
 .pink-box {
   background-color: #E78EA9;
   height: 200px;
+  position: relative;
 }
 
 .green-box {
   background-color: #B9F8D3;
-  height: 600px;
+  height: 400px;
 }
 
-footer {
-  background-color: #FFFFFF;
+.text-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
