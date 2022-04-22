@@ -34,11 +34,11 @@ li a {
 }
 
 li a:hover {
-  background-color: #D2E53A;
+  background-color: #E78EA9;
 }
 
 .active {
-  background-color: #C9F3F8;
+  background-color: #40DFEF;
 }
 
 .hero-image {
@@ -52,17 +52,17 @@ li a:hover {
 }
 
 .yellow-box {
-  background-color: #DBF8C9;
+  background-color: #FFFBE7;
   height: 400px;
 }
 
-.purple-box {
-  background-color: #E6C9F8;
+.pink-box {
+  background-color: #E78EA9;
   height: 200px;
 }
 
-.peach-box {
-  background-color: #F8CFC9;
+.green-box {
+  background-color: #B9F8D3;
   height: 600px;
 }
 
