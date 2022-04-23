@@ -116,3 +116,12 @@ li a:hover {
 .sushi-image {
   width: 300px;  
 }
+
+.flex-container__align-left {
+  position: relative;
+  /* align-items: center; */
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
