@@ -99,7 +99,7 @@ li a:hover {
   border-style: solid;
 }
 
-.flex-container {
+.flex-container__align-center {
   position: relative;
   align-items: center;
   justify-content: center;
