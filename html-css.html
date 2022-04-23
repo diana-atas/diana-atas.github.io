@@ -17,41 +17,58 @@
       </ul>
     </nav>
 
-    <main>
-    <h1 class="font__courier-new purple-text">The CSS Box Model</h1>
-    <h2>My Sushi Sample</h2>
-
-    <p>Every element in a webpage is in its own box – the heading up there, this paragraph, the images below – although it may or may not really look like a box. The Box Model is a standard in CSS and is used in laying out and presenting HTML.</p>
-
-    <p>Each box has four layers and I love sushi so to illustrate let’s make sushi! There are heaps of types of sushi but we’ll stick to the classic Salmon Maki Sushi Roll for now.</p>
-
-    <p>The following code produces a piece of sushi (view from the top).</p>
-
-    <p>I know, I know, it's not nearly as appetising as the real thing but it’ll do (I hope!).</p>
-
-    <h3>Content</h3>
-    <p>This is your element (your text or your image), this is your fresh salmon fillet. We can set the dimensions of the Content using the <code>width</code> and <code>height</code> properties.</p>
-
-    <h3>Padding</h3>
-    <p>This is the area around your Content, this is your cooked sushi rice. Want more rice? Sure can do! Just increase the <code>padding</code> property.</p>
-    
-    <h3>Border</h3>
-    <p>This is the Toasted Nori (dried edible seaweed) that goes around your Padding. It would be good to note that some types of sushi may not be wrapped by Nori but something else like more fish or sesame seeds. Depending on the type of sushi you are making, you can specify the border colour, width, radius, or style.</p>
-    
-    <h3>Margins</h3>
-    <p>This is the area outside the border; it is the whitespace between each box in the webpage. We really cannot see how this works unless we get more sushi and line them up like so.</p>
-
-    <p>And these pieces here have no margins.</p>
-
-    <p>Now it’s your turn to make sushi. Enjoy!</p>
-
-    <p>I’m off to have me some real sushi…</p>
-
-  </main>
-
-  <footer class="green-box">
-    <div class="text-bottom">A blog by <strong>Diana Atas</strong>, rookie Web Developer.</div>
-  </footer>
+    <main class="flex-container">
+      <h1 class="font__courier-new purple-text">The CSS Box Model</h1>
+      <h2>My Sushi Sample</h2>
   
-  </body>
-</html>
+      <p>Every element in a webpage is in its own box – the heading up there, this paragraph, the images below – although it may or may not really look like a box. The Box Model is a standard in CSS and is used in laying out and presenting HTML.</p>
+  
+      <p>Each box has four layers and I love sushi so to illustrate let’s make sushi! There are heaps of types of sushi but we’ll stick to the classic Salmon Maki Sushi Roll for now.</p>
+  
+      <p>The following code produces a piece of sushi (view from the top).</p>
+  
+      <img class="code-snippet" src="/images/sushicode.jpg" alt="html and css code to make sushi">
+  
+      <p>I know, I know, it's not nearly as appetising as the real thing but it’ll do (I hope!).</p>
+  
+      <img class="sushi" src="/images/pinksquare.jpg" alt="this is a pink square">
+  
+      <p>Here's a prettier version with each layer labelled.</p>
+      <img class="sushi-image" src="/images/sushiboxmodel.jpg" alt="sushi with the box model layers labelled.">
+  
+      <h3>Content</h3>
+      <p>This is your element (your text or your image), this is your fresh salmon fillet. We can set the dimensions of the Content using the <code>width</code> and <code>height</code> properties.</p>
+  
+      <h3>Padding</h3>
+      <p>This is the area around your Content, this is your cooked sushi rice. Want more rice? Sure can do! Just increase the <code>padding</code> property.</p>
+  
+      <h3>Border</h3>
+      <p>This is the Toasted Nori (dried edible seaweed) that goes around your Padding. It would be good to note that some types of sushi may not be wrapped by Nori but something else like more fish or sesame seeds. Depending on the type of sushi you are making, you can specify the border colour, width, radius, or style.</p>
+  
+      <h3>Margins</h3>
+      <p>This is the area outside the border; it is the whitespace between each box in the webpage. To see how this works let’s get some more sushi and line them up like so. We can increase the space between each sushi by increasing the <code>margin</code> property.</p>
+  
+      <figure>
+        <img class="sushi-image" src="/images/sushiwithmargin.jpg" alt="several pieces of sushi spaced out evenly">
+        <figcaption><a href="https://www.vecteezy.com/free-vector/sushi-roll">Sushi Roll Vectors by Vecteezy</a></figcaption>
+      </figure>
+  
+      <p>And these pieces here have no margin.</p>
+  
+      <figure>
+        <img class="sushi-image" src="/images/sushinomargin.jpg" alt="six pieces of salmon maki sushi plated together">
+        <figcaption><a href="https://www.vecteezy.com/free-vector/sushi-roll">Sushi Roll Vectors by Vecteezy</a></figcaption>
+      </figure>
+  
+      <p>Now it’s your turn to make sushi (here’s a copy of the <a href="/images/pinksquare.jpg" target="_blank">pinksquare image</a> I used). Enjoy!</p>
+  
+      <p>I’m off to have me some real sushi… till next time!</p>
+  
+  </main>
+      <footer class="green-box">
+        <div class="text-bottom">A blog by <strong>Diana Atas</strong>, rookie Web Developer.</div>
+      </footer>
+  
+    </body>
+  </html>
+  

@@ -107,3 +107,12 @@ li a:hover {
   flex-direction: column;
   margin: 10px;
 }
+
+.code-snippet {
+  width: 700px;
+  border: 1px dotted grey;
+}
+
+.sushi-image {
+  width: 300px;  
+}
