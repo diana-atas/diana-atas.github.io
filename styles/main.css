@@ -88,3 +88,22 @@ li a:hover {
 .yellow-text {
   color: #FBB901;
 }
+
+.sushi {
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  border-color: #069A8E;
+  border-width: 10px;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+.flex-container {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
