@@ -42,7 +42,7 @@ li a:hover {
   margin: 20px;
 }
 
-.flex-container {
+.flex-container__height-600 {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -67,7 +67,7 @@ li a:hover {
   left: 10px;
 }
 
-.greeting {
+.font__courier-new {
   font-family: 'Courier New', Courier, monospace;
   font-size: 3em;
   font-weight: bolder;
