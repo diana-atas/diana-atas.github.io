@@ -125,3 +125,9 @@ li a:hover {
   flex-direction: column;
   margin: 10px;
 }
+
+blockquote p::before,
+blockquote p::after {
+  content: '"';
+  
+}
