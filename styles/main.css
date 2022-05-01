@@ -160,13 +160,6 @@ blockquote p::after {
   width: 100px;
 }
 
-.img_object-fit-cover {
-  width: 200px;
-  /* object-fit: cover; */
-  border: 5px solid black;
-  overflow: hidden;
-}
-
 .div_container-grid-4 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
