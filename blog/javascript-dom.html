@@ -33,19 +33,27 @@
         <img class="img_100-width" src="/images/Olaf.png" alt="A happy Olaf, the snowman from the animated film Frozen.">
         
         <p>And when Elsa &ldquo;let it go&rdquo;, she accidentally breathed life &#40;or JavaScript!&#41; into the dynamic, interactive and summer-loving Olaf.</p>
-        <img class="img_600-width" src="/images/olafGIF.gif" alt="Olaf, the snowman from the animated film Frozen, walking.">
+        <img class="img_object-fit-cover" src="/images/olafGIF.gif" alt="Olaf, the snowman from the animated film Frozen, walking.">
         
         <p>We can perform more magic through the Document Object Model or the DOM. The DOM arranges the elements systematically in the HTML document into a hierarchy of nodes. This gives us the power to reference an object and make changes &#40;add, remove, style, the possibilities are endless! ok, ok, not endless&#41; to it.</p>
         
-        <p>There are different ways to pick these objects up, here are some examples.</p>
+        <p>There are different ways to pick these objects up, here are some examples. Try clicking on one of the buttons to select Sven or the Frozen sisters.</p>
 
-        <img id="sven" src="/images/sven.png" alt="Sven, Hans' reindeer from the animated film Frozen.">
+        <div class="div_container-grid-4">
+          <img id="sven" class="img_200-width" src="/images/sven.png" alt="Sven, Hans' reindeer from the animated film Frozen.">
+          
+          <img class="img_100-width" src="/images/kristoff.png" alt="Kristoff, Arendelle&#39s official Ice Master and Deliverer from the animated film Frozen.">
 
-        <img class="img_100-width" src="/images/kristoff.png" alt="Kristoff, Arendelle&#39s official Ice Master and Deliverer from the animated film Frozen.">
+          <img class="sisters" src="/images/anna.png" alt="Anna, one of the heroines from the animated film Frozen.">
 
-        <img class="img_100-width" src="/images/anna.png" alt="Anna, one of the heroines from the animated film Frozen.">
+          <img class="sisters" src="/images/elsa.png" alt="Elsa, one of the heroines from the animated film Frozen.">
 
-        <img class="img_100-width" src="/images/elsa.png" alt="Elsa, one of the heroines from the animated film Frozen.">
+        </div>
+
+        <p>
+          <button id="sven-btn" onclick="selectSven()">document.getElementById&#40;&ldquo;sven&rdquo;&#41;</button>
+          <button id="sisters-btn" onclick="selectSisters()">document.getElementsByClassName&#40;&ldquo;sisters&rdquo;&#41;</button>
+        </p>
 
         <p>My husband says about 90% of the world&#39s population &#40;not fact checked nor verified&#41; have seen Frozen so for the benefit of the 10%, my Frozen analogy stops here.</p>
 
@@ -85,5 +93,22 @@
       <footer class="green-box">
         <div class="text-bottom">A blog by <strong>Diana Atas</strong>, aspiring Web Developer.</div>
       </footer>
+      <script>
+        sven = document.getElementById("sven");
+        sisters = document.getElementsByClassName("sisters");
+        function selectSven() {
+          sven.style.border = "5px solid blue";
+          for (let i = 0; i < sisters.length; i++) {
+            sisters[i].style.border = "none";
+          }
+        }
+
+        function selectSisters() {
+          for (let i = 0; i < sisters.length; i++) {
+            sisters[i].style.border = "5px solid blue";
+          }
+          sven.style.border = "none";
+        }
+      </script>
     </body>
 </html>
