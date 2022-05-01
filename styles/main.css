@@ -7,6 +7,10 @@ body {
   flex-direction: column;
 }
 
+p {
+  margin: 7px;;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
