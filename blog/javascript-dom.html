@@ -46,7 +46,7 @@
 
           <img id="sven" class="img_200-width" src="/images/sven.png" alt="Sven, Hans' reindeer from the animated film Frozen.">
 
-          <img class="img_100-width" src="/images/kristoff.png" alt="Kristoff, Arendelle&#39s official Ice Master and Deliverer from the animated film Frozen.">
+          <img id="kristoff" class="img_100-width" src="/images/kristoff.png" onmouseover="disappearKristoff()" onmouseout="reappearKristoff()" alt="Kristoff, Arendelle&#39s official Ice Master and Deliverer from the animated film Frozen.">
           
         </div>
 
@@ -94,8 +94,9 @@
         <div class="text-bottom">A blog by <strong>Diana Atas</strong>, aspiring Web Developer.</div>
       </footer>
       <script>
-        sven = document.getElementById("sven");
-        sisters = document.getElementsByClassName("sisters");
+        let sven = document.getElementById("sven");
+        let sisters = document.getElementsByClassName("sisters");
+        let kristoff = document.getElementById("kristoff");
         function selectSven() {
           sven.style.border = "5px solid blue";
           for (let i = 0; i < sisters.length; i++) {
@@ -108,6 +109,13 @@
             sisters[i].style.border = "5px solid blue";
           }
           sven.style.border = "none";
+        }
+
+        function disappearKristoff() {
+          kristoff.className = "hidden";
+        }
+        function reappearKristoff() {
+          kristoff.classList.remove("hidden");
         }
       </script>
     </body>
