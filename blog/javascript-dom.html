@@ -18,7 +18,7 @@
           <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
         </ul>
       </nav>
-      <main class="flex-container__align-left">
+      <main class="flex-container__align-center">
         
         <h1 class="font__courier-new purple-text">JavaScript Fundamentals</h1>
         
@@ -26,14 +26,14 @@
         
         <p>Without realising it, Elsa and Anna first built Olaf when they were kids. They began with a pile of snow and moulded it into spheres, collected a few stones, a couple of sticks and a carrot, all were needed to construct Olaf, pretty much what HTML is for a website.</p>
         
-        <img src="/images/elsaandanna.png" alt="Elsa and Anna, from the animated film Frozen, building a snowman.">
+        <img class="img_300-width" src="/images/elsaandanna.png" alt="Elsa and Anna, from the animated film Frozen, building a snowman.">
 
         <p>CSS &#40;Cascading Style Sheets&#41; was then applied to position the pieces to their proper place and give colour!</p>
 
-        <img src="/images/Olaf.png" alt="A happy Olaf, the snowman from the animated film Frozen.">
+        <img class="img_100-width" src="/images/Olaf.png" alt="A happy Olaf, the snowman from the animated film Frozen.">
         
         <p>And when Elsa &ldquo;let it go&rdquo;, she accidentally breathed life &#40;or JavaScript!&#41; into the dynamic, interactive and summer-loving Olaf.</p>
-        <img src="/images/olafGIF.gif" alt="Olaf, the snowman from the animated film Frozen, walking.">
+        <img class="img_600-width" src="/images/olafGIF.gif" alt="Olaf, the snowman from the animated film Frozen, walking.">
         
         <p>We can perform more magic through the Document Object Model or the DOM. The DOM arranges the elements systematically in the HTML document into a hierarchy of nodes. This gives us the power to reference an object and make changes &#40;add, remove, style, the possibilities are endless! ok, ok, not endless&#41; to it.</p>
         
@@ -41,11 +41,11 @@
 
         <img id="sven" src="/images/sven.png" alt="Sven, Hans' reindeer from the animated film Frozen.">
 
-        <img src="/images/kristoff.png" alt="Kristoff, Arendelle&#39s official Ice Master and Deliverer from the animated film Frozen.">
+        <img class="img_100-width" src="/images/kristoff.png" alt="Kristoff, Arendelle&#39s official Ice Master and Deliverer from the animated film Frozen.">
 
-        <img src="/images/anna.png" alt="Anna, one of the heroines from the animated film Frozen.">
+        <img class="img_100-width" src="/images/anna.png" alt="Anna, one of the heroines from the animated film Frozen.">
 
-        <img src="/images/elsa.png" alt="Elsa, one of the heroines from the animated film Frozen.">
+        <img class="img_100-width" src="/images/elsa.png" alt="Elsa, one of the heroines from the animated film Frozen.">
 
         <p>My husband says about 90% of the world&#39s population &#40;not fact checked nor verified&#41; have seen Frozen so for the benefit of the 10%, my Frozen analogy stops here.</p>
 
@@ -53,29 +53,29 @@
 
         <p>Control flow is the order that instructions in a program are executed and in JavaScript this is from left-to-right, top-to-bottom unless it comes across another instruction that changes said flow. Consider the following code:</p>
 
-        <img src="/images/feedCatsFunction.png" alt="code block for a function called feedCats.">
+        <img class="img_300-width" src="/images/feedCatsFunction.png" alt="code block for a function called feedCats.">
 
         <p>In order to feed my two cats correctly, I need to follow these steps in the correct order &#40;can&#39t really ladle food out of the pack if it ain&#39t open&#41; however, if <code>catOne</code> &#40;a.k.a. theDiva &#45; not her real name&#41; is around she always gets fed first otherwise I will never hear the end of it. If <code>catTwo</code> is not around, well, doesn&#39t matter.</p>
 
         <p>Regardless who gets fed first, it has to happen twice a day, so we setup a loop like so:</p>
-        <img src="/images/feedCatsLoop.png" alt="code block example of a for loop.">
+        <img class="img_300-width" src="/images/feedCatsLoop.png" alt="code block example of a for loop.">
 
         <p>Notice how the function <code>feedCats()</code> was just casually slipped into that loop? That&#39s the beauty of functions &#45; if I want to do something that&#39s repetitive, I can just enclose the instructions &#40;and conditionals or even more loops&#41; into a function instead of typing them again and again when and where I want them to execute.</p>
 
         <h2>Arrays vs. Objects</h2>
         <p>An array is an ordered list of values that&#39s stored in one variable. The values in the array don&#39t have to be of the same type, they can be a mix of integers, strings or even objects. There are nine items in the following array but we start counting from zero hence each item is indexed as <code>&#91;0, 1, 2, 3, 4, 5, 6, 7, 8&#93;</code>.</p>
 
-        <img src="/images/cutearray.jpg" alt="an array called cute, of some puppies and kittens.">
+        <img src="/images/cutearray.jpg" style="width: 1000px;" alt="an array called cute, of some puppies and kittens.">
 
         <p>If I want to pick up the white kitty in the middle, we&#39d do it like this: <code>let whiteKitty = cute&#91;4&#93;;</code></p>
         
         <p>We can now define <code>whiteKitty</code> as an object.</p>
 
-        <img src="/images/catobject.png" alt="code block to define object whiteKitty.">
+        <img class="img_500-width" src="/images/catobject.png" alt="code block to define object whiteKitty.">
 
         <p>What are objects? Like an array, it&#39s a collection, but of properties. Each of the items in our array <code>cute</code> can be an object with it&#39s own set of properties that may be different or not with another&#39s. A property defines a characteristic of an object and consists of a key and a value &#40;for example, name and Luna respectively&#41;. These properties can be accessed using .DOT or &#91; &#93; bracket notation.</p>
 
-        <img src="/images/catproperty.png" alt="code block to access an objects' properties.">
+        <img class="img_300-width" src="/images/catproperty.png" alt="code block to access an objects' properties.">
 
         <p>Let&#39s say our beloved Luna no longer likes playing with her Laser Pointer. There are a lot of ways to remove this from the array of toys and here is one of them: <code>whiteKitty.favouriteToys.splice(2, 2);</code></p>
 

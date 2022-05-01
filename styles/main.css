@@ -131,3 +131,31 @@ blockquote p::after {
   content: '"';
   
 }
+
+.img_600-width {
+  width: 600px;
+}
+
+.img_500-width {
+  width: 500px;
+}
+
+.img_400-width {
+  width: 400px;
+}
+
+.img_300-width {
+  width: 300px;
+}
+
+.img_200-width {
+  width: 200px;
+}
+
+.img_100-width {
+  width: 100px;
+}
+
+#sven {
+  width: 200px;
+}
