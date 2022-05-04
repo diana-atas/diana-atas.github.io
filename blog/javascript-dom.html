@@ -1,127 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="/styles/main.css" rel="stylesheet" type="text/css">
-        <title>Technical Blog</title>
-    </head>
-    <body>
-      <nav>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/blog/html-css.html">The CSS Box Model</a></li>
-          <li class="active"><a href="#">JavaScript Fundamentals</a></li>
-          <li><a href="/blog/identity-values.html">Identity & Values</a></li>
-          <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
-          <li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>
-          <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
-        </ul>
-      </nav>
-      <main class="flex-container__align-center">
-        
-        <h1 class="font__courier-new purple-text">JavaScript Fundamentals</h1>
-        
-        <p>&ldquo;Sorcery!&rdquo; exclaimed the Duke of Weasel Town &#45; sorry, the Duke of Weselton as Elsa hurled spears of ice forming a sharp glacial barricade around her. My 17-year-old daughter and I were watching Frozen &#40;probably for the 3 millionth time but who&#39s counting eh?&#41; then it dawned on me… &ldquo;Elsa is a web developer! &#40;of some sorts&#41;&rdquo;. Right, I am exaggerating of course but she created one of the most colourful &#40;figuratively speaking&#41; characters in the film &#45; Olaf!</p>
-        
-        <p>Without realising it, Elsa and Anna first built Olaf when they were kids. They began with a pile of snow and moulded it into spheres, collected a few stones, a couple of sticks and a carrot, all were needed to construct Olaf, pretty much what HTML is for a website.</p>
-        
-        <img class="img_300-width" src="/images/elsaandanna.png" alt="Elsa and Anna, from the animated film Frozen, building a snowman.">
 
-        <p>CSS &#40;Cascading Style Sheets&#41; was then applied to position the pieces to their proper place and give colour!</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="/styles/main.css" rel="stylesheet" type="text/css">
+  <title>Technical Blog</title>
+</head>
 
-        <img class="img_100-width" src="/images/Olaf.png" alt="A happy Olaf, the snowman from the animated film Frozen.">
-        
-        <p>And when Elsa &ldquo;let it go&rdquo;, she accidentally breathed life &#40;or JavaScript!&#41; into the dynamic, interactive and summer-loving Olaf.</p>
-        <img class="img_200-width" src="/images/olafGIF.gif" alt="Olaf, the snowman from the animated film Frozen, walking.">
-        
-        <p>We can perform more magic through the Document Object Model or the DOM. The DOM arranges the elements systematically in the HTML document into a hierarchy of nodes. This gives us the power to reference an object and make changes &#40;add, remove, style, the possibilities are endless! ok, ok, not endless&#41; to it.</p>
-        
-        <p>There are different ways to pick these objects up, here are some examples. Try clicking on one of the buttons to select Sven or the Frozen sisters. Try hovering your mouse over Kristoff to make him disappear!</p>
+<body>
 
-        <div class="div_container-grid-4">
-          <img class="sisters" src="/images/anna.png" alt="Anna, one of the heroines from the animated film Frozen.">
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/blog/html-css.html">The CSS Box Model</a></li>
+      <li class="active"><a href="#">JavaScript Fundamentals</a></li>
+      <li><a href="/blog/identity-values.html">Identity & Values</a></li>
+      <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
+      <li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>
+      <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
+    </ul>
+  </nav>
 
-          <img class="sisters" src="/images/elsa.png" alt="Elsa, one of the heroines from the animated film Frozen.">
+  <main class="flex-container__align-center">
+    
+    <h1 class="font__courier-new purple-text">JavaScript Fundamentals</h1>
+    
+    <p>
+      &ldquo;Sorcery!&rdquo; exclaimed the Duke of Weasel Town &#45; sorry, the Duke of Weselton as Elsa hurled spears of ice forming a sharp glacial barricade around her. My 17-year-old daughter and I were watching Frozen &#40;probably for the 3 millionth time but who&#39s counting eh?&#41; then it dawned on me… &ldquo;Elsa is a web developer! &#40;of some sorts&#41;&rdquo;. Right, I am exaggerating of course but she created one of the most colourful &#40;figuratively speaking&#41; characters in the film &#45; Olaf!
+    </p>
+    
+    <p>
+      Without realising it, Elsa and Anna first built Olaf when they were kids. They began with a pile of snow and moulded it into spheres, collected a few stones, a couple of sticks and a carrot, all were needed to construct Olaf, pretty much what HTML is for a website.
+    </p>
+    
+    <img class="img_300-width" src="/images/elsaandanna.png" alt="Elsa and Anna, from the animated film Frozen, building a snowman.">
 
-          <img id="sven" class="img_200-width" src="/images/sven.png" alt="Sven, Hans' reindeer from the animated film Frozen.">
+    <p>
+      CSS &#40;Cascading Style Sheets&#41; was then applied to position the pieces to their proper place and give colour!
+    </p>
 
-          <img id="kristoff" class="img_100-width" src="/images/kristoff.png" onmouseover="disappearKristoff()" onmouseout="reappearKristoff()" alt="Kristoff, Arendelle&#39s official Ice Master and Deliverer from the animated film Frozen.">
-          
-        </div>
+    <img class="img_100-width" src="/images/Olaf.png" alt="A happy Olaf, the snowman from the animated film Frozen.">
+    
+    <p>
+      And when Elsa &ldquo;let it go&rdquo;, she accidentally breathed life &#40;or JavaScript!&#41; into the dynamic, interactive and summer-loving Olaf.
+    </p>
 
-          <button id="sisters-btn" onclick="selectSisters()">document.getElementsByClassName&#40;&ldquo;sisters&rdquo;&#41;</button>
-          <button id="sven-btn" onclick="selectSven()">document.getElementById&#40;&ldquo;sven&rdquo;&#41;</button>
-        </p>
+    <img class="img_200-width" src="/images/olafGIF.gif" alt="Olaf, the snowman from the animated film Frozen, walking.">
+    
+    <p>
+      We can perform more magic through the Document Object Model or the DOM. The DOM arranges the elements systematically in the HTML document into a hierarchy of nodes. This gives us the power to reference an object and make changes &#40;add, remove, style, the possibilities are endless! ok, ok, not endless&#41; to it.
+    </p>
+    
+    <p>
+      There are different ways to pick these objects up, here are some examples. Try clicking on one of the buttons to select Sven or the Frozen sisters. Try hovering your mouse over Kristoff to make him disappear!
+    </p>
 
-        <p>The DOM can also be accessed using Developer Tools or DevTools, these are built into most current browsers and really useful in inspecting, testing and debugging. This is just me messing around with the Google web page. Don&#39t worry, changes made here are not permanent, the page goes back to it&#39s original state when the page is refreshed.</p>
+    <div class="div_container-grid-4">
+      
+      <img class="sisters" src="/images/anna.png" alt="Anna, one of the heroines from the animated film Frozen.">
 
-        <img class="img_1000-width" src="/images/devtools.jpg" alt="The word Google changed to Frozen using Chrome DevTools">
-        <p>
-          
-        <p>My husband says about 90% of the world&#39s population &#40;not fact checked nor verified&#41; have seen Frozen so for the benefit of the 10%, my Frozen analogy stops here.</p>
+      <img class="sisters" src="/images/elsa.png" alt="Elsa, one of the heroines from the animated film Frozen.">
 
-        <h2>Control Flow, Loops & Functions</h2>
+      <img id="sven" class="img_200-width" src="/images/sven.png" alt="Sven, Hans' reindeer from the animated film Frozen.">
 
-        <p>Control flow is the order that instructions in a program are executed. In JavaScript, this is from left-to-right, top-to-bottom unless it comes across another instruction that changes said flow. Consider the following code:</p>
+      <img id="kristoff" class="img_100-width" src="/images/kristoff.png" onmouseover="disappearKristoff()" onmouseout="reappearKristoff()" alt="Kristoff, Arendelle&#39s official Ice Master and Deliverer from the animated film Frozen.">
+      
+    </div>
 
-        <img class="img_400-width" src="/images/feedCatsFunction.png" alt="code block for a function called feedCats.">
+      <button id="sisters-btn" onclick="selectSisters()">document.getElementsByClassName&#40;&ldquo;sisters&rdquo;&#41;</button>
+      <button id="sven-btn" onclick="selectSven()">document.getElementById&#40;&ldquo;sven&rdquo;&#41;</button>
 
-        <p>In order to feed my two cats correctly, I need to follow these steps in the correct order &#45; can&#39t really ladle food out of the pack if it ain&#39t open. My cats have outdoor access and if <code>catOne</code> &#40;a.k.a. theDiva &#45; not her real name&#41; is indoors she always gets fed first&#59; otherwise, I will never hear the end of it. If <code>catTwo</code> is outside well, doesn&#39t matter, <code>catOne</code> has to be fed.</p>
+    <p>The DOM can also be accessed using Developer Tools or DevTools, these are built into most current browsers and really useful in inspecting, testing and debugging. This is just me messing around with the Google web page. Don&#39t worry, changes made here are not permanent, the page goes back to it&#39s original state when the page is refreshed.</p>
 
-        <p>Regardless who gets fed first, it has to happen twice a day, so we setup a loop like so:</p>
-        <img class="img_400-width" src="/images/feedCatsLoop.png" alt="code block example of a for loop.">
+    <img class="img_1000-width" src="/images/devtools.jpg" alt="The word Google changed to Frozen using Chrome DevTools">  
+      
+    <p>
+      My husband says about 90% of the world&#39s population &#40;not fact checked nor verified&#41; have seen Frozen so for the benefit of the 10%, my Frozen analogy stops here.
+    </p>
 
-        <p>Notice how the function <code>feedCats()</code> was just casually slipped into that loop? That&#39s the beauty of functions &#45; if I want to do something that&#39s repetitive, I can just enclose the instructions &#40;and conditionals or even more loops&#41; into a function instead of typing them again and again when and where I want them to execute.</p>
+    <h2>Control Flow, Loops & Functions</h2>
 
-        <h2>Arrays vs. Objects</h2>
-        <p>An array is an ordered list of values that&#39s stored in one variable. The values in the array don&#39t have to be of the same type, they can be a mix of integers, strings or even objects. There are nine items in the following array but we start counting from zero hence each item is indexed as <code>&#91;0, 1, 2, 3, 4, 5, 6, 7, 8&#93;</code>.</p>
+    <p>
+      Control flow is the order that instructions in a program are executed. In JavaScript, this is from left-to-right, top-to-bottom unless it comes across another instruction that changes said flow. Consider the following code:
+    </p>
 
-        <img src="/images/cutearray.jpg" style="width: 1000px;" alt="an array called cute, of some puppies and kittens.">
+    <img class="img_400-width" src="/images/feedCatsFunction.png" alt="code block for a function called feedCats.">
 
-        <p>If I want to pick up the white kitty in the middle, we&#39d do it like this: <code>let whiteKitty = cute&#91;4&#93;;</code></p>
-        
-        <p>We can now define <code>whiteKitty</code> as an object.</p>
+    <p>
+      In order to feed my two cats correctly, I need to follow these steps in the correct order &#45; can&#39t really ladle food out of the pack if it ain&#39t open. My cats have outdoor access and if <code>catOne</code> &#40;a.k.a. theDiva &#45; not her real name&#41; is indoors she always gets fed first&#59; otherwise, I will never hear the end of it. If <code>catTwo</code> is outside well, doesn&#39t matter, <code>catOne</code> has to be fed.
+    </p>
 
-        <img class="img_600-width" src="/images/catobject.png" alt="code block to define object whiteKitty.">
+    <p>
+      Regardless who gets fed first, it has to happen twice a day, so we setup a loop like so:
+    </p>
 
-        <p>What are objects? Like an array, it&#39s a collection, but of properties. Each of the items in our array <code>cute</code> can be an object with it&#39s own set of properties that may be different or not with another&#39s. A property defines a characteristic of an object and consists of a key and a value &#40;for example, name and Luna respectively&#41;. These properties can be accessed using .DOT or &#91; &#93; bracket notation.</p>
+    <img class="img_400-width" src="/images/feedCatsLoop.png" alt="code block example of a for loop.">
 
-        <img class="img_400-width" src="/images/catproperty.png" alt="code block to access an objects' properties.">
+    <p>
+      Notice how the function <code>feedCats()</code> was just casually slipped into that loop? That&#39s the beauty of functions &#45; if I want to do something that&#39s repetitive, I can just enclose the instructions &#40;and conditionals or even more loops&#41; into a function instead of typing them again and again when and where I want them to execute.
+    </p>
 
-        <p>Let&#39s say our beloved Luna no longer likes playing with her Laser Pointer. There are a lot of ways to remove this from the array of toys and here is one of them: <code>whiteKitty.favouriteToys.splice(2, 2);</code></p>
+    <h2>Arrays vs. Objects</h2>
 
-        <p>Phew, that is a lot of information to take in but it&#39s just to give you an overview of how powerful these tools can be! Whenever you&#39re ready to dive in, <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a> is a great resource.</p>
+    <p>
+      An array is an ordered list of values that&#39s stored in one variable. The values in the array don&#39t have to be of the same type, they can be a mix of integers, strings or even objects. There are nine items in the following array but we start counting from zero hence each item is indexed as <code>&#91;0, 1, 2, 3, 4, 5, 6, 7, 8&#93;</code>.
+    </p>
 
-      </main>
-      <footer class="green-box">
-        <div class="text-bottom">A blog by <strong>Diana Atas</strong>, aspiring Web Developer.</div>
-      </footer>
-      <script>
-        let sven = document.getElementById("sven");
-        let sisters = document.getElementsByClassName("sisters");
-        let kristoff = document.getElementById("kristoff");
-        function selectSven() {
-          sven.style.border = "5px solid blue";
-          for (let i = 0; i < sisters.length; i++) {
-            sisters[i].style.border = "none";
-          }
-        }
+    <img src="/images/cutearray.jpg" style="width: 1000px;" alt="an array called cute, of some puppies and kittens.">
 
-        function selectSisters() {
-          for (let i = 0; i < sisters.length; i++) {
-            sisters[i].style.border = "5px solid blue";
-          }
-          sven.style.border = "none";
-        }
+    <p>
+      If I want to pick up the white kitty in the middle, we&#39d do it like this: <code>let whiteKitty = cute&#91;4&#93;;</code>
+    </p>
+    
+    <p>
+      We can now define <code>whiteKitty</code> as an object.
+    </p>
 
-        function disappearKristoff() {
-          kristoff.classList.add("hidden");
-        }
-        function reappearKristoff() {
-          kristoff.classList.remove("hidden");
-        }
-      </script>
-    </body>
+    <img class="img_600-width" src="/images/catobject.png" alt="code block to define object whiteKitty.">
+
+    <p>
+      What are objects? Like an array, it&#39s a collection, but of properties. Each of the items in our array <code>cute</code> can be an object with it&#39s own set of properties that may be different or not with another&#39s. A property defines a characteristic of an object and consists of a key and a value &#40;for example, name and Luna respectively&#41;. These properties can be accessed using .DOT or &#91; &#93; bracket notation.
+    </p>
+
+    <img class="img_400-width" src="/images/catproperty.png" alt="code block to access an objects' properties.">
+
+    <p>
+      Let&#39s say our beloved Luna no longer likes playing with her Laser Pointer. There are a lot of ways to remove this from the array of toys and here is one of them: <code>whiteKitty.favouriteToys.splice(2, 2);</code>
+    </p>
+
+    <p>
+      Phew, that is a lot of information to take in but it&#39s just to give you an overview of how powerful these tools can be! Whenever you&#39re ready to dive in, <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a> is a great resource.
+    </p>
+
+  </main>
+
+  <footer class="green-box">
+    <div class="text-bottom">A blog by <strong>Diana Atas</strong>, aspiring Web Developer.</div>
+  </footer>
+
+  <script>
+    let sven = document.getElementById("sven");
+    let sisters = document.getElementsByClassName("sisters");
+    let kristoff = document.getElementById("kristoff");
+    function selectSven() {
+      sven.style.border = "5px solid blue";
+      for (let i = 0; i < sisters.length; i++) {
+        sisters[i].style.border = "none";
+      }
+    }
+
+    function selectSisters() {
+      for (let i = 0; i < sisters.length; i++) {
+        sisters[i].style.border = "5px solid blue";
+      }
+      sven.style.border = "none";
+    }
+
+    function disappearKristoff() {
+      kristoff.classList.add("hidden");
+    }
+    function reappearKristoff() {
+      kristoff.classList.remove("hidden");
+    }
+  </script>
+  
+</body>
 </html>
