@@ -1,10 +1,11 @@
 body {
-  margin: 0;
+  /* margin: 2%; */
   font-family: Helvetica;
   color: #0D3849;
   /* background-color: #DBF8C9; */
   display: flex;
   flex-direction: column;
+  /* width: 1000px; */
 }
 
 p {
@@ -20,21 +21,25 @@ code {
 }
 
 nav ul {
-  list-style-type: none;
+  
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #FFFBE7;
 }
 
-li {
-  float: left;
+.li-style-none {
+  list-style-type: none;
+}
+
+nav li {
+  float: right;
 }
 
 li a {
   display: block;
   color: #106F7A;
-  text-align: center;
+  /* text-align: center; */
   padding: 10px;
   text-decoration: none;
 }
@@ -48,8 +53,8 @@ li a:hover {
 }
 
 .hero-image {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
   margin: 20px;
 }
@@ -58,13 +63,27 @@ li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
-.item__3x3 {
-  flex: 0 32%;
-  height: 600px;
-  margin-bottom: 2%;
-  border: 2px solid black;
+.item-2__right {
+  /* width: 400px; */
+  flex-grow: 1;
+  text-align: center;
+  /* position: sticky; */
+  /* border: 2px solid black; */
+}
+
+.item-2__left {
+  /* flex-grow: 1; */
+  width: 300px;
+  text-align: left;
+  /* border: 2px solid black; */
+}
+
+.item-2__left > ul li a,
+.item-2__left > h1 {
+  padding-left: 50px;
 }
 
 .flex-container__box-align-right {
@@ -74,7 +93,7 @@ li a:hover {
 .green-box {
   position: relative;
   background-color: #B9F8D3;
-  height: 200px;
+  height: 100px;
 }
 
 .text-bottom {
@@ -85,7 +104,7 @@ li a:hover {
 
 .font__courier-new {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bolder;
 }
 
