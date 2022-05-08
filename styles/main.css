@@ -48,19 +48,23 @@ li a:hover {
 }
 
 .hero-image {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   margin: 20px;
 }
 
-.flex-container__height-600 {
+.flex-container__main {
   display: flex;
-  flex-direction: row;
-  position: relative;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item__3x3 {
+  flex: 0 32%;
   height: 600px;
+  margin-bottom: 2%;
+  border: 2px solid black;
 }
 
 .flex-container__box-align-right {
@@ -81,7 +85,7 @@ li a:hover {
 
 .font__courier-new {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bolder;
 }
 
