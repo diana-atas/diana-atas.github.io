@@ -17,13 +17,13 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 nav {
   white-space: nowrap;
   background: #FFFBE7;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 nav ul {
@@ -54,13 +54,13 @@ footer {
 main {
   grid-column: 2 / 5;
   padding: 5em;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 section {
   padding: 2rem;
   margin: 0 0 2rem 0;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 p {
