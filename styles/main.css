@@ -69,7 +69,7 @@ li a:hover {
   text-align: left;
   padding-top: 20px;
   padding-bottom: 100px;
-  /* position: fixed; */
+  position: sticky;
   /* border: 2px solid black; */
 }
 
