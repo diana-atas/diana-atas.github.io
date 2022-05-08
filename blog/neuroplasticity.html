@@ -9,19 +9,32 @@
 </head>
 <body>
 
-  <nav>
-    <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/blog/html-css.html">The CSS Box Model</a></li>
-      <li><a href="/blog/javascript-dom.html">JavaScript Fundamentals</a></li>
-      <li><a href="/blog/identity-values.html">Identity & Values</a></li>
-      <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
-      <li class="active"><a href="#">Emotional Intelligence</a></li>
-      <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
-    </ul>
-  </nav>
+  <div class="grid-container">
 
-  <main class="flex-container__align-left">
+    <nav>
+
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+      </ul>
+
+      <h1>Technical</h1>
+      <ul class="li-style-none">
+        <li><a href="/blog/html-css.html">The CSS Box Model</a></li>
+        <li><a href="/blog/javascript-dom.html">JavaScript Fundamentals</a></li>
+        <li><a href="/blog/problem-solving.html">Problem Solving</a></li>
+      </ul>
+    
+      <h1>Cultural</h1>
+      <ul class="li-style-none">
+        <li><a href="/blog/identity-values.html">Identity & Values</a></li>
+        <li><a href="/blog/learning-plan.html">Learning Plan</a></li>
+        <li><a href="/blog/emotional-intelligence.html">Emotional Intelligence</a></li>
+        <li class="active"><a href="#">Neuroplasticity</a></li>
+        <li><a href="/blog/te-houtaewa-template.html">Te Houtaewa</a></li>
+      </ul>
+    </nav>
+
+  <main>
     <h1>Mindset</h1>
     <p>
       -DA, <time datetime="2022-05-02">02 May 2022</time>
@@ -86,5 +99,9 @@
       A blog by <strong>Diana Atas</strong>, aspiring Web Developer.
     </div>
   </footer>
+  </div>
+
+  <script src="/my-javascript.js"></script>
+
 </body>
 </html>
