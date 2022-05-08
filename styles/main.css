@@ -51,7 +51,8 @@ footer {
 }
 
 main {
-  padding-bottom: 40rem;
+  grid-column: 2 / 5;
+  padding: 5em;
   border: 2px solid black;
 }
 
@@ -79,7 +80,7 @@ code {
   grid-column: 2 / 5;
   align-items: center;
   justify-content: center;
-  
+  padding: 5em;
 }
 
 .hero-image {
