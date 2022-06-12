@@ -438,12 +438,20 @@ button:active {
     /* padding: 5em; */
   }
   .hero-image {
-      width: 10vw;
+      width: 20vw;
   }
   .font__courier-new {
     font-size: large;
   }
+}
 
+@media (min-width: 1200px) {
+  .hero-image {
+    width: 25vw;
+}
+.font__courier-new {
+  font-size: xx-large;
+}
 }
 /* End of Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
